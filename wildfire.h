@@ -97,8 +97,9 @@ void print_error(char opt) {
 		"(-pN) number of states to print must be an integer in [0...10000].",
 		"(-sN) simulation grid size must be an integer in [5...40]."
 	};
+	int i = 1;
 	bool opt_found = false;
-	for (int i = 1; i < NUM_OPTIONS; ++i) {
+	for (; i < NUM_OPTIONS; ++i) {
 		if (opt == options[i]) {
 			fprintf(stderr, "%s\n", err_msg[i]);
 			opt_found = true;
@@ -110,7 +111,3 @@ void print_error(char opt) {
 }
 
 #endif
-
-
-
-
