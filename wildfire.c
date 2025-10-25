@@ -29,7 +29,7 @@ void print_stats(void) {
 		"size %d, pCatch %.2f, density %.2f, pBurning %.2f, pNeighbor %.2f\n"
 		"cycle %d, current changes %d, cumulative changes %d\n",
 		size, pCatch, density, pBurning, pNeighbor,
-		cycle, changes cum_changes
+		cycle, changes, cum_changes
 	);
 }
 
@@ -68,7 +68,7 @@ void shuffle(Cell grid[size][size]) {
 	Cell grid_arr[num_cells];
 	for (; r < size; ++r) {
 		for (c = 0; c < size; ++c) {
-			grid_arr[(size * arr) + c] = grid[r][c];
+			grid_arr[(size * r) + c] = grid[r][c];
 		}
 	}
 	
@@ -240,14 +240,17 @@ int main(int argc, char *argv[]) {
 				value = atoi(optarg);                                                   
                                 if (is_in_range(opt, value)) {                                          
                                         pCatch = value / 100.0;                                       
-                                        break;                                                                                          } else {                                                                
+                                        break;                                                                                          
+								} else {                                                                
                                         print_error(opt);                                               
-                                        return FAIL;                                                                                    }
+                                        return FAIL;                                                                                    
+								}
 			case 'd':
 				value = atoi(optarg);
                                 if (is_in_range(opt, value)) {
                                         density = value / 100.0;
-                                        break;                                                                                          } else {
+                                        break;                                                                                          
+								} else {
                                         print_error(opt);
                                         return FAIL;
                                 }
@@ -255,7 +258,8 @@ int main(int argc, char *argv[]) {
 				value = atoi(optarg);
                                 if (is_in_range(opt, value)) {
                                         pNeighbor = value / 100.0;
-                                        break;                                                                                          } else {
+                                        break;                                                                                          
+								} else {
                                         print_error(opt);
                                         return FAIL;
                                 }
@@ -264,7 +268,8 @@ int main(int argc, char *argv[]) {
 				value = atoi(optarg);
                                 if (is_in_range(opt, value)) {
                                         num_updates = value;
-                                        break;                                                                                          } else {
+                                        break;                                                                                          
+								} else {
                                         print_error(opt);
                                         return FAIL;
                                 }
@@ -272,7 +277,8 @@ int main(int argc, char *argv[]) {
 				value = atoi(optarg);
                                 if (is_in_range(opt, value)) {
                                         size = value;
-                                        break;                                                                                          } else {
+                                        break;                                                                                          
+								} else {
                                         print_error(opt);
                                         return FAIL;
                                }
