@@ -1,0 +1,32 @@
+============================= ASSIGNMENT REPORT ============================
+Assignment name is: Wildfire
+My name is: Sean James
+
+===== In what cases does the program run correctly?  =================
+All the cases it should as far as I can tell.
+
+===== In what cases does the program fail and how?  ==================
+None as far as I can tell.
+
+===== If applicable, what were the extra credit results?  ============
+===== If applicable, describe how to run the extra credit.  ==========
+===== How much time did I spend on the project?  =====================
+~16-20 hrs.
+
+===== What did I learn?  =============================================
+I learned a good amount. Learning about getopt was cool.
+
+===== What was easy in this assignment?  =============================
+A decent amount, surprisingly. There were only a handful of times I
+got truly stuck or confused.
+
+===== What gave me problems or troubles?  ============================
+Coding the print and overlay modes.
+
+===== What would be the most important improvement for the project?  =
+Style/formatting.
+
+===== What else would I have liked to do for this assignment?  =======
+Started earlier.
+
+============================================================================
