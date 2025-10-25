@@ -1,0 +1,17 @@
+commit d0ccd921e7ad3437265f5324fdde3419cf1fe133
+Author: Sean James <saj6853@rit.edu>
+Date:   Sat Oct 25 17:41:37 2025 -0400
+
+    files commit
+
+commit 93cb41f9d1dfc43609e1eff2e572f4d7becbf821
+Author: Sean James <saj6853@rit.edu>
+Date:   Sat Oct 25 16:15:53 2025 -0400
+
+    wildfire.h commit
+
+commit 1ca6bf34cd078930223a2d797647b3efacaf64b7
+Author: Sean James <saj6853@rit.edu>
+Date:   Sat Oct 25 16:04:13 2025 -0400
+
+    commit 1
