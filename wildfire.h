@@ -87,7 +87,29 @@ void print_help(void) {
 	);
 }
 
+void print_error(char opt) {
+	char *err_msg[] = {
+		"(-?) all command-line options must be one of the Simulation Configuration Options listed below.",
+		"(-bN) proportion already burning must be an integer in [1...100].",
+		"(-cN) probability a tree will catch fire must be an integer in [1...100].",
+		"(-dN) density of trees in the grid must be an integer in [1...100].",
+		"(-nN) \%neighbors influence catching fire must be an integer in [1...100].",
+		"(-pN) number of states to print must be an integer in [0...10000].",
+		"(-sN) simulation grid size must be an integer in [5...40]."
+	};
+	bool opt_found = false;
+	for (int i = 1; i < NUM_OPTIONS; ++i) {
+		if (opt == options[i]) {
+			fprintf(stderr, "%s\n", err_msg[i]);
+			opt_found = true;
+			break;
+		}
+	}
+	if (i == NUM_OPTIONS) fprintf(stderr, "%s\n", err_msg[0]);
+	print_help();
+}
 
+#endif
 
 
 
